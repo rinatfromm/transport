@@ -4,7 +4,7 @@ import styles from './ServicesList.module.css'
 
 function ServicesList() {
     return (
-        <div>
+        <div className={styles.servicesListContainer}>
             {transportServicesData.map((section, index) => (
                 <div key={index} className={styles.servicesList}>
                     <h3>{section.title}</h3>

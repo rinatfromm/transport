@@ -1,5 +1,16 @@
-.root {
+.servicesContainer {
     background-color: #f8f8f8;
     border-bottom: 1px solid #e5e5e5;
-    padding: 10px 20px;
+    padding: 30px;
+}
+
+.leistungTitle {
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #333;
+}
+
+.servicesText {
+    color: #666;
+    margin-bottom: 10px;
 }

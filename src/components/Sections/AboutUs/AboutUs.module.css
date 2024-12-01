@@ -35,11 +35,11 @@
 }
 
 .contactLink {
-    color: #406182; /* Обычно синий цвет для ссылок */
-    text-decoration: none; /* Убираем подчеркивание по умолчанию */
+    color: #406182;
+    text-decoration: none; 
 }
 
 .contactLink:hover {
-    color: #305060; /* Темно-синий цвет при наведении */
-    text-decoration: underline; /* Добавляем подчеркивание при наведении */
+    color: #305060; 
+    text-decoration: underline; 
 }

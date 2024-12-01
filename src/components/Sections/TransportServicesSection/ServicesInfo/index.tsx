@@ -6,8 +6,8 @@ function ServicesInfo() {
         <div className={styles.servicesInfo}>
             {servicesInfo.map((item, id) => (
                 <div key={id} className={styles.serviceItem}>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
+                    <h3 className={styles.servicesTitle}>{item.title}</h3>
+                    <p className={styles.serviceText}>{item.description}</p>
                 </div>
             ))}
         </div>

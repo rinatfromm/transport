@@ -1,20 +1,22 @@
-// src/components/TextBlock.tsx
-import React from 'react';
-import { textBlocks } from '../../../../data/textBlockData'; // Массив с данными
+import { textBlocks } from '../../../../data/textBlockData';
+import styles from './TextBlock.module.css'; 
 
 const TextBlock: React.FC = () => {
     return (
-        <>
+        <div className={styles.textBlockContainer}>
             {textBlocks.map((block, index) => (
-                <div key={index}>
-                    <h3>{block.title}</h3>
-                    <p>{block.firstParagraph}</p>
-                    {block.secondParagraph && <p>{block.secondParagraph}</p>}
+                <div key={index} className={styles.textBlock}>
+                    <h3 className={styles.blockTitle}>{block.title}</h3>
+                    <p className={styles.firstParagraph}>{block.firstParagraph}</p>
+                    {block.secondParagraph && (
+                        <p className={styles.secondParagraph}>{block.secondParagraph}</p>
+                    )}
                 </div>
             ))}
-        </>
+        </div>
     );
 };
 
 export default TextBlock;
+
 
