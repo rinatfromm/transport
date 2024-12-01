@@ -1,0 +1,45 @@
+.aboutUs {
+    background-color: #f8f8f8;
+    padding: 30px;
+    position: relative;
+}
+.heading{
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #333;
+}
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.description {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 1rem;
+}
+
+.contactDescription {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.contactDetails {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contactLink {
+    color: #406182; /* Обычно синий цвет для ссылок */
+    text-decoration: none; /* Убираем подчеркивание по умолчанию */
+}
+
+.contactLink:hover {
+    color: #305060; /* Темно-синий цвет при наведении */
+    text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}
