@@ -1,5 +1,54 @@
-.root {
+.impressumContainer {
     background-color: #f8f8f8;
     border-bottom: 1px solid #e5e5e5;
-    padding: 10px 20px;
+    padding: 30px;
+}
+
+
+.impressumTitle {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+
+.impressumSubtitle {
+    font-size: 25px;
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+
+.impressumSectionTitle {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.impressumLink {
+    color: #406182;
+    text-decoration: none;
+}
+
+.impressumLink:hover {
+    color: #305060;
+    text-decoration: underline;
+}
+
+
+.impressumText {
+    margin: 10px 0;
+    color: #666;
+}
+
+.quelle {
+    color: #333;
+}
+
+.container strong {
+    font-weight: bold;
 }

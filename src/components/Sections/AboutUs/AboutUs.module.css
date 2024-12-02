@@ -5,8 +5,10 @@
 }
 .heading{
     margin-bottom: 15px;
-    font-size: 30px;
+    font-size: 35px;
     color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
 }
 .card {
     background-color: #fff;
