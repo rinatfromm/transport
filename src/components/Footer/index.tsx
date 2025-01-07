@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 const Footer: React.FC = () => {
@@ -6,6 +7,9 @@ const Footer: React.FC = () => {
             <div className={styles.container}>
                 <div className={styles.contactInfo}>
                     <h3 className={styles.footerTitle}>Kontakt</h3>
+                    <NavLink to="/impressum" className={styles.footerTitleImp}>
+                        Impressum
+                    </NavLink>
                     <p className={styles.footerText}>Ruppel-Transporte</p>
                     <p className={styles.footerText}>Inh. Svetlana Ruppel</p>
                     <p className={styles.footerText}>Dornenbusch 39</p>

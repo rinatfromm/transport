@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Icon } from '@iconify/react';
+import WhatsAppButton from '../UI/WhatsAppButton';
 import styles from './Header.module.css';
+
+
+
 
 function Header() {
     const [scrolled, setScrolled] = useState(false);
@@ -26,13 +30,9 @@ function Header() {
             <div className={styles.headerContainer}>
                 <div className={styles.headerLogo}>
                     <p className={styles.oneTitle}>Ruppel-Transporte – Expressfahrten</p>
-                    {/* <p className={styles.twoTitle}>Expressfahrten, Möbeltransport, Kurierfahrten, Umzüge</p> */}
                 </div>
-                <div className={styles.divider}></div>
                 <div className={styles.contactIcons}>
-                    <a href="#about-us" className={styles.contactLink}>
-                        <Icon icon="mdi:information" style={{ fontSize: '24px', color: '#fff' }} />
-                    </a>
+                    <WhatsAppButton phoneNumber='491729017929' message='Hallo!%20Ich%20möchte%20mehr%20über%20Ihre%20Dienstleistungen%20erfahren.' />
                     <a href="tel:+491729017929" className={styles.contactLink}>
                         <Icon icon="mdi:phone" style={{ fontSize: '24px', color: '#fff' }} />
                     </a>

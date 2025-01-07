@@ -15,16 +15,6 @@ const AboutUs: React.FC = () => {
       <CardSection heading={contentData.transporter.heading} items={contentData.transporter.items} />
       <CardSection heading={contentData.anhaenger.heading} items={contentData.anhaenger.items} />
 
-      <h2 className={styles.heading}>Kontaktieren Sie uns:</h2>
-      <p className={styles.contactDescription}>
-        Informieren Sie sich über unsere Preise und Leistungen auf unserer Homepage, per Email oder telefonisch.
-      </p>
-      <p className={styles.contactDetails}>
-        Email: <a className={styles.contactLink} href="mailto:info@ruppel-transporte.de">info@ruppel-transporte.de</a>
-      </p>
-      <p className={styles.contactDetails}>
-        Tel-Nr.: <a className={styles.contactLink} href="tel:+4917669653451">0176 696 53 451</a>
-      </p>
     </section>
   );
 };

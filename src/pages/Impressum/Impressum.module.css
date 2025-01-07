@@ -4,6 +4,21 @@
     padding: 30px;
 }
 
+.arrowContainer {
+    margin-bottom: 20px;
+}
+
+.linkWithArrow {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #406182;
+    text-decoration: none;
+}
+
+.linkWithArrow:hover {
+    color: #305060;
+}
 
 .impressumTitle {
     font-size: 35px;
@@ -23,6 +38,7 @@
 
 .impressumSectionTitle {
     font-size: 20px;
+    margin-bottom: 15px;
     margin-top: 15px;
     color: #333;
     font-weight: bold;
@@ -51,4 +67,9 @@
 
 .container strong {
     font-weight: bold;
+}
+
+.whatsappLogo {
+    width: 30px;
+    height: 30px;
 }

@@ -20,7 +20,11 @@
     font-size: 1.5rem;
     color: #f3f3f3;
 }
-
+.footerTitleImp{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #f3f3f3;
+}
 .footerTitle:hover {
     color: #999999;
 }

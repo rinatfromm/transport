@@ -1,8 +1,15 @@
-import styles from './Imprint.module.css';
+import { NavLink } from 'react-router-dom';
+import styles from './Impressum.module.css';
 
 const Impressum: React.FC = () => {
     return (
         <section className={styles.impressumContainer}>
+            <div className={styles.arrowContainer}>
+                <NavLink to="/" className={styles.linkWithArrow}>
+                    <span className={styles.arrow}>←</span> Zurück zur Startseite
+                </NavLink>
+            </div>
+
             <h1 className={styles.impressumTitle}>Impressum</h1>
 
             <h2 className={styles.impressumSubtitle}>Angaben gemäß § 5 TMG</h2>
