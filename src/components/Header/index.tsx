@@ -3,9 +3,6 @@ import { Icon } from '@iconify/react';
 import WhatsAppButton from '../UI/WhatsAppButton';
 import styles from './Header.module.css';
 
-
-
-
 function Header() {
     const [scrolled, setScrolled] = useState(false);
 
@@ -33,11 +30,11 @@ function Header() {
                 </div>
                 <div className={styles.contactIcons}>
                     <WhatsAppButton phoneNumber='491729017929' message='Hallo!%20Ich%20möchte%20mehr%20über%20Ihre%20Dienstleistungen%20erfahren.' />
-                    <a href="tel:+491729017929" className={styles.contactLink}>
-                        <Icon icon="mdi:phone" style={{ fontSize: '24px', color: '#fff' }} />
+                    <a href="tel:+491729017929" className={`${styles.contactLink} ${scrolled ? styles.scrolledLink : ''}`}>
+                        <Icon icon="mdi:phone" style={{ fontSize: '24px' }} />
                     </a>
-                    <a href="mailto:example@example.com" className={styles.contactLink}>
-                        <Icon icon="mdi:email" style={{ fontSize: '24px', color: '#fff' }} />
+                    <a href="mailto:example@example.com" className={`${styles.contactLink} ${scrolled ? styles.scrolledLink : ''}`}>
+                        <Icon icon="mdi:email" style={{ fontSize: '24px' }} />
                     </a>
                 </div>
             </div>
@@ -46,6 +43,7 @@ function Header() {
 }
 
 export default Header;
+
 
 
 
