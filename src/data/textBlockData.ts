@@ -1,4 +1,4 @@
-import { TextBlock } from '../types/textBlock'
+import { TextBlock } from '../types/TextBlock'
 
 
 

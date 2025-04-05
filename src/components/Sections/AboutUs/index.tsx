@@ -1,4 +1,3 @@
-// AboutUs.tsx
 import styles from './AboutUs.module.css';
 import { contentData } from '../../../data/contentData';
 import CardSection from './CardSection';

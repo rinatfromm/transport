@@ -1,5 +1,5 @@
 import { mdiShieldCheck, mdiTruck, mdiMessage, mdiTimerSand } from '@mdi/js';
-import { Services } from '../types/services'
+import { Services } from '../types/Services'
 
 
 

@@ -1,4 +1,16 @@
-.whatsappLogo{
+.whatsappLogo {
     width: 24px;
     height: 24px;
+}
+
+.whatsappLogo:hover {
+    transform: scale(1.2);
+}
+@media (max-width: 1124px) {
+
+    .whatsappLogo {
+        width: 20px;
+        height: 20px;
+    }
+
 }

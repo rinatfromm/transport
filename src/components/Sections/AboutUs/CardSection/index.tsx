@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './CardSection.module.css';
-import { Section } from '../../../../types/contentData';
+import { Section } from '../../../../types/ContentData';
 
 const CardSection: React.FC<Section> = ({ heading, items }) => {
     return (

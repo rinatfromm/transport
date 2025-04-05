@@ -1,4 +1,4 @@
-import { RentalTerm } from '../types/rentalTerm';
+import { RentalTerm } from '../types/RentalTerm';
 
 export const rentalTerms: RentalTerm[] = [
     { id: 1, text: "Der Fahrer sollte mindestens 27 Jahre alt sein." },

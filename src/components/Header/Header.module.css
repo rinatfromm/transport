@@ -42,23 +42,83 @@
     margin: 0;
 }
 
-.twoTitle {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-style: italic;
-    font-size: 12px;
-    margin: 5px 0 0;
-}
-
-.headerScrolled .contactLink {
-    color: #333;
-}
-
 .contactLink {
     color: #fff;
     transition: transform 0.3s ease;
 }
 
+.contactLink svg {
+    font-size: 24px
+}
+
 .contactLink:hover {
     transform: scale(1.2);
+}
+
+
+
+@media (max-width: 1124px) {
+
+    .headerContainer {
+        padding: 25px 25px;
+    }
+
+    .oneTitle {
+        font-size: 20px;
+    }
+    .contactLink svg {
+        font-size: 20px
+    }
+}
+
+@media (min-width: 769px) {
+    .burgerMenu {
+        display: none;
+    }
+
+    .contactIcons {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerContainer {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contactIcons {
+        display: none;
+        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contactIcons.menuOpen {
+        display: flex;
+    }
+
+    .burgerMenu {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .burgerLine {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 4px 0;
+    }
 }

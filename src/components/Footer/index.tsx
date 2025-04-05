@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Footer.module.css';
+import ContactInfo from './ContactInfo';
 
 const Footer: React.FC = () => {
     return (
@@ -10,12 +11,11 @@ const Footer: React.FC = () => {
                     <NavLink to="/impressum" className={styles.footerTitleImp}>
                         Impressum
                     </NavLink>
-                    <p className={styles.footerText}>Ruppel-Transporte</p>
-                    <p className={styles.footerText}>Inh. Svetlana Ruppel</p>
-                    <p className={styles.footerText}>Dornenbusch 39</p>
-                    <p className={styles.footerText}>38120 Braunschweig</p>
-                    <p className={styles.footerKontakt}>Telefon: <a href="tel:+4917669653451">+49 176 696 53 451</a></p>
-                    <p className={styles.footerKontakt}>E-Mail: <a href="mailto:info@ruppel-transporte.de">info@ruppel-transporte.de</a></p>
+                    <ContactInfo value="Ruppel-Transporte" />
+                    <ContactInfo value="Svetlana Ruppel" />
+                    <ContactInfo value="Dornenbusch 39, 38120 Braunschweig" />
+                    <ContactInfo label="Telefon" value="+4917669653451" isLink />
+                    <ContactInfo label="E-Mail" value="info@ruppel-transporte.de" isLink />
                 </div>
             </div>
         </footer>

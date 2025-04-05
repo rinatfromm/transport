@@ -1,16 +1,23 @@
 .billboard {
     position: relative;
     width: 100%;
-    height: 100vh; 
     padding: 0 30px;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    background: url(../../../assets/images/bustwo.png) no-repeat center / cover;
+    justify-content: flex-start;
+    align-items: center;
 }
-.heading{
+
+.heading {
     margin-bottom: 15px;
 }
+
 .image {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -18,15 +25,11 @@
 }
 
 .slogan {
-    position: absolute;       
-    top: 70%;                   
-    left: 35%;                  
-    transform: translate(-50%, -50%); 
-    color: white;
-    font-size: 45px;
+    color: #fff;
+    font-size: 34px;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    z-index: 1;   
+    font-weight: 700;
+    max-width: 700px;
 }
 
 button {
@@ -39,12 +42,13 @@ button {
     border-radius: 30px;
     font-size: 17px;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 button:hover {
     background-color: #305060;
 }
-.p{
+
+.p {
     font-size: 25px;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import whatsappLogo from '../../../assets/icons/wa.svg'
-import { WhatsAppButtonProps } from '../../../types/whatsAppButton'
+import { WhatsAppButtonProps } from '../../../types/WhatsAppButton'
 import styles from './WhatsAppButton.module.css'; // Импорт стилей, если нужно
 
 

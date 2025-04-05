@@ -1,4 +1,4 @@
-import { ContentData } from '../types/contentData';
+import { ContentData } from '../types/ContentData';
 
 export const contentData: ContentData = {
     leistungen: {

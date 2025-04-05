@@ -1,4 +1,4 @@
-import { TransportServicesSection } from '../types/transportServicesSection';
+import { TransportServicesSection } from '../types/TransportServicesSection';
 
 export const transportServicesData: TransportServicesSection[] = [
     {

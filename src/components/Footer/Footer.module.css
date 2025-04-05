@@ -20,26 +20,14 @@
     font-size: 1.5rem;
     color: #f3f3f3;
 }
-.footerTitleImp{
+
+.footerTitleImp {
     margin-bottom: 15px;
     font-size: 1.2rem;
     color: #f3f3f3;
 }
+
 .footerTitle:hover {
-    color: #999999;
-}
-
-.footerText {
-    margin: 5px 0;
-    line-height: 1.6;
-    color: #999999;
-}
-
-.footerText:hover {
-    color: #f3f3f3;
-}
-
-.footerKontakt {
     color: #999999;
 }
 
