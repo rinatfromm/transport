@@ -48,7 +48,8 @@
 }
 
 .contactLink svg {
-    font-size: 24px
+    font-size: 24px;
+    color: #406182;
 }
 
 .contactLink:hover {
@@ -66,6 +67,7 @@
     .oneTitle {
         font-size: 20px;
     }
+
     .contactLink svg {
         font-size: 20px
     }
@@ -93,23 +95,23 @@
         display: none;
         gap: 10px;
         flex-direction: column;
-        width: 100%;
         position: absolute;
-        top: 60px;
-        left: 0;
+        top: 64px;
+        right: 0px;
         background-color: rgba(255, 255, 255, 0.9);
         padding: 20px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .contactIcons.menuOpen {
+        border-radius: 5px;
         display: flex;
+        /* flex-direction: row-reverse; */
     }
 
     .burgerMenu {
         display: block;
         cursor: pointer;
-        padding: 10px;
         position: absolute;
         top: 20px;
         right: 20px;
@@ -118,7 +120,22 @@
     .burgerLine {
         width: 25px;
         height: 3px;
-        background-color: #fff;
-        margin: 4px 0;
+        background-color: #406182;
+        margin: 5px 0;
     }
+}
+
+@media (max-width: 500px) {
+    .oneTitle {
+        max-width: 161px;
+    }
+
+    .burgerMenu {
+        top: 30px;
+    }
+
+    .contactIcons {
+        top: 88px;
+    }
+
 }

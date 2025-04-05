@@ -25,6 +25,12 @@ function Header() {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+
+        if (!isMenuOpen) {
+            setTimeout(() => {
+                setIsMenuOpen(false);
+            }, 5000); 
+        }
     };
 
     return (
@@ -41,14 +47,14 @@ function Header() {
                 </div>
                 <div className={`${styles.contactIcons} ${isMenuOpen ? styles.menuOpen : ''}`}>
                     <WhatsAppButton
-                        phoneNumber='491729017929'
-                        message='Hallo!%20Ich%20möchte%20mehr%20über%20Ihre%20Dienstleistungen%20erfahren.'
+                        phoneNumber="491729017929"
+                        message="Hallo! Ich interessiere mich für Ihre Dienstleistungen und möchte mehr darüber erfahren. Könnten Sie mir bitte mehr Informationen geben?"
                     />
                     <a href="tel:+491729017929" className={`${styles.contactLink} ${scrolled ? styles.scrolledLink : ''}`}>
-                        <Icon icon="mdi:phone"  />
+                        <Icon icon="mdi:phone" />
                     </a>
                     <a href="mailto:info@ruppel-transporte.de" className={`${styles.contactLink} ${scrolled ? styles.scrolledLink : ''}`}>
-                        <Icon icon="mdi:email"  />
+                        <Icon icon="mdi:email" />
                     </a>
                 </div>
             </div>
