@@ -4,6 +4,7 @@ import TransportServicesSection from '../../components/Sections/TransportService
 import ServiceList from '../../components/Sections/ServiceList'
 import GallerySection from '../../components/Sections/GallerySection'
 import styles from './MainPage.module.css'
+import LocationMap from '../../components/LocationMap'
 
 function MainPage() {
     return (
@@ -13,6 +14,7 @@ function MainPage() {
             <AboutUs />
             <GallerySection />
             <TransportServicesSection />
+            <LocationMap />
         </main>
     )
 }

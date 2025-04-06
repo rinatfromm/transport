@@ -37,9 +37,9 @@
     color: #406182;
 }
 
-.headerScrolled .burgerLine {
-    background-color: #406182;
-}
+/* .headerScrolled .burgerLine {
+    background-color: #ccc;
+} */
 
 .headerScrolled .contactIcons.menuOpen {
     background-color: rgba(255, 255, 255, 0.9);
@@ -97,8 +97,11 @@
         padding: 20px;
         flex-direction: column;
         align-items: flex-start;
+        background-color: #fff;
     }
-
+    .oneTitle {
+        color: #333;
+    } 
     .contactIcons {
         display: none;
         flex-direction: column;
@@ -130,7 +133,7 @@
     .burgerLine {
         width: 25px;
         height: 3px;
-        background-color: #fff;
+        background-color: #ccc;
         margin: 5px 0;
     }
 

@@ -70,3 +70,31 @@
   justify-content: space-between;
   z-index: 20;
 }
+@media (max-width: 1510px) {
+
+  .emblaSlide {
+    min-width: 291px;
+  }
+
+}
+@media (max-width: 414px) {
+
+  .emblaSlide {
+    min-width: 355px;
+  }
+
+}
+@media (max-width: 390px) {
+
+  .emblaSlide {
+    min-width: 332px;
+  }
+
+}
+@media (max-width: 375px) {
+
+  .emblaSlide {
+    min-width: 320px;
+  }
+
+}
