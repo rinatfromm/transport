@@ -1,26 +1,31 @@
-import RentalTerms from './RentalTerms'
-import ServicesInfo from './ServicesInfo'
-import ServicesList from './ServicesList'
-import TextBlock from './TextBlock'
-import styles from './TransportServicesSection.module.css'
+import React from 'react';
+import ServicesList from './ServicesList';
+import styles from './TransportServicesSection.module.css';
 
 const TransportServicesSection: React.FC = () => {
     return (
         <section className={styles.servicesContainer}>
-            <h2 className={styles.leistungTitle}>Unsere Leistungen</h2>
-            <p className={styles.servicesText}>Wir vermieten Transporter mit einem Ladevolumen von 1,8 bis 15,5 Kubikmetern, auch mit Fahrer, für private und gewerbliche Kunden.</p>
-            <p className={styles.servicesText}><strong>OHNE ZUSÄTZLICHE KM-PAUSCHALE!</strong></p>
-            <ServicesInfo />
-            <p className={styles.servicesText}>Ob Umzüge, Möbeltransporte oder der Transport von überdimensionalen Gütern wie Maschinen – wir erledigen alles aus einer Hand, ganz ohne versteckte Kosten.</p>
-            <p className={styles.servicesText}>Auch bei E-Bay-Käufen oder dem Transport von gewerblichen Waren stehen wir Ihnen gerne zur Verfügung, auch am Wochenende.</p>
+            <h2 className={styles.servicesTitel}>Warum Ruppel-Transporte?</h2>
+            <ul className={styles.servicesInfo}>
+                <li className={styles.servicesList}>Kurzfristige Verfügbarkeit </li>
+                <li className={styles.servicesList}>Schnelle Angebotsbearbeitung</li>
+                <li className={styles.servicesList}>Transparente Preise – Keine versteckten Kosten</li>
+            </ul>
+            <p className={styles.servicesText}>
+                Ob Umzüge, Möbeltransporte oder größere Einkäufe wie Maschinen – wir erledigen alles aus einer Hand!
+            </p>
             <ServicesList />
-            <RentalTerms />
-            <TextBlock />
-            <div className={styles.serviceFooter}>
-                <p className={styles.servicesText}>Wir freuen uns auf Ihre Anfrage!</p>
+            <div className={styles.servicesFooter}>
+                <h2 className={styles.servicesFooterTitel}>Kontaktieren Sie uns</h2>
+                <p className={styles.servicesFooterText}>Wir erstellen Ihnen gerne ein individuelles Angebot – kostenlos und unverbindlich. Auf Wunsch bieten wir nach Besichtigung ein Festpreisangebot an.</p>
+                <h3 className={styles.servicesKontakt}>Telefon | E-Mail</h3>
+                <p className={styles.servicesFooterText}>Überzeugen Sie sich von unserem erstklassigen Preis-Leistungs-Verhältnis!</p>
+                <p className={styles.servicesFooterInfo}>Rechnung gemäß Kleinunternehmerregelung (§ 19 UStG)</p>
+                <p className={styles.servicesFooterInfo}>Wir freuen uns auf Ihre Anfrage!</p>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default TransportServicesSection
+export default TransportServicesSection;
+

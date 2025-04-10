@@ -14,8 +14,8 @@ const Impressum: React.FC = () => {
 
             <h2 className={styles.impressumSubtitle}>Angaben gemäß § 5 TMG</h2>
             <p className={styles.impressumText}>Ruppel-Transporte</p>
-            <p className={styles.impressumText}>Dornenbusch 39</p>
-            <p className={styles.impressumText}>38120 Braunschweig</p>
+            <p className={styles.impressumText}>Neudammstraße 27 </p>
+            <p className={styles.impressumText}>38116 Braunschweig</p>
 
             <h3 className={styles.impressumSectionTitle}>Vertreten durch:</h3>
             <p className={styles.impressumText}>Geschäftsführer: Svetlana Ruppel</p>

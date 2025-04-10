@@ -7,10 +7,9 @@ const AboutUs: React.FC = () => {
     <section className={styles.aboutUs}>
       <h2 className={styles.heading}>Über uns</h2>
       <p className={styles.description}>
-        Ruppel-Transporte ist ein Transportunternehmen, gegründet im Jahre 2008, mit Sitz in Braunschweig. Wir erledigen Gütertransporte jeglicher Art, auch für Privat- und Gewerbekunden europaweit.
+        Ruppel-Transporte – Ihr zuverlässiger Partner für Transporte seit 2008 mit Sitz in Braunschweig. Wir bieten europaweite Gütertransporte für Privat- und Gewerbekunden.
       </p>
-
-      <CardSection heading={contentData.leistungen.heading} items={contentData.leistungen.items} />
+      <p className={styles.leistungTitel}>Unsere Leistungen</p>
       <CardSection heading={contentData.transporter.heading} items={contentData.transporter.items} />
       <CardSection heading={contentData.anhaenger.heading} items={contentData.anhaenger.items} />
 

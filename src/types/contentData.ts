@@ -4,7 +4,6 @@ export interface Section {
 }
 
 export interface ContentData {
-    leistungen: Section;
     transporter: Section;
     anhaenger: Section;
 }

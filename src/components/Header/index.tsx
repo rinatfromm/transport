@@ -29,7 +29,7 @@ function Header() {
         if (!isMenuOpen) {
             setTimeout(() => {
                 setIsMenuOpen(false);
-            }, 5000); 
+            }, 5000);
         }
     };
 
@@ -37,23 +37,30 @@ function Header() {
         <header className={`${styles.header} ${scrolled ? styles.headerScrolled : ''}`}>
             <div className={styles.headerContainer}>
                 <div className={styles.headerLogo}>
-                    <p className={styles.oneTitle}>Ruppel-Transporte – Expressfahrten</p>
+                    <p className={styles.oneTitle}>Ruppel - Transporte</p>
                 </div>
 
-                <div className={styles.burgerMenu} onClick={toggleMenu}>
+                <div
+                    className={styles.burgerMenu}
+                    onClick={toggleMenu}
+                    role="button"
+                >
                     <div className={styles.burgerLine}></div>
                     <div className={styles.burgerLine}></div>
                     <div className={styles.burgerLine}></div>
                 </div>
-                <div className={`${styles.contactIcons} ${isMenuOpen ? styles.menuOpen : ''}`}>
+
+                <div className={`${styles.contactIcons} ${isMenuOpen ? styles.menuOpen : ''}`} data-testid="contact-icons">
                     <WhatsAppButton
                         phoneNumber="491729017929"
                         message="Hallo! Ich interessiere mich für Ihre Dienstleistungen und möchte mehr darüber erfahren. Könnten Sie mir bitte mehr Informationen geben?"
                     />
-                    <a href="tel:+491729017929" className={`${styles.contactLink} ${scrolled ? styles.scrolledLink : ''}`}>
+                    <a href="tel:+491729017929" className={`${styles.contactLink} ${scrolled ? styles.scrolledLink : ''}`}
+                        role="link" aria-label="phone">
                         <Icon icon="mdi:phone" />
                     </a>
-                    <a href="mailto:info@ruppel-transporte.de" className={`${styles.contactLink} ${scrolled ? styles.scrolledLink : ''}`}>
+                    <a href="mailto:info@ruppel-transporte.de" className={`${styles.contactLink} ${scrolled ? styles.scrolledLink : ''}`}
+                        role="link" aria-label="email">
                         <Icon icon="mdi:email" />
                     </a>
                 </div>
@@ -63,6 +70,7 @@ function Header() {
 }
 
 export default Header;
+
 
 
 

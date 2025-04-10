@@ -2,23 +2,22 @@ import { TransportServicesSection } from '../types/TransportServicesSection';
 
 export const transportServicesData: TransportServicesSection[] = [
     {
-        title: "Unsere Spezialitäten:",
+        title: "Für jeden Bedarf:",
         items: [
             "Seniorenumzüge",
             "Studentenumzüge",
             "Überregionale Umzüge",
-            "Möbeltransporte",
-            "Umzugshelfer"
+            "Umzugshelfer",
+            "Kurierfahrten",
+            "Expressfahrten",
+            "ect.",
         ],
     },
     {
-        title: "Zur Verfügung stehen:",
+        title: "Wichtige Hinweise:",
         items: [
-            "Transporter (auch hoch und lang)",
-            "Kleintransporter",
-            "Planenanhänger (1,3 bis 3,5 t)",
-            "Kofferanhänger",
-            "Kippanhänger"
+            "Mietzeit: Start und Ende ab Braunschweig Lamme.",
+            "Tragehelfer: Fahrer ist kein Träger, kann aber bei Bedarf hinzugebucht werden.",
         ],
     }
 ];

@@ -12,7 +12,36 @@
     padding-bottom: 10px;
 }
 
+.servicesTitel {
+    margin-bottom: 20px;
+}
+
+.servicesList {
+    margin-bottom: 12px;
+    padding-left: 1.5rem;
+}
+
+.servicesInfo {
+    margin: 0 0 40px 24px;
+}
+
 .servicesText {
     color: #666;
     margin-bottom: 10px;
+}
+
+.servicesFooterTitel {
+    color: #333;
+    font-weight: bold;
+}
+.servicesKontakt{
+    color: #333;
+    font-weight: bold;
+}
+.servicesFooterInfo{
+    color: #333;
+    font-weight: bold;
+}
+.servicesFooterText{
+    color: #666;
 }
