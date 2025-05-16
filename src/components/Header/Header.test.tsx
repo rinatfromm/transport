@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { vi, describe, it, expect, beforeEach, afterEach } from 'vitest'
 import Header from './index'
-import { act } from 'react-dom/test-utils'
+import { act } from 'react';
 
 describe('Header component', () => {
     beforeEach(() => {

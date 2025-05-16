@@ -21,8 +21,14 @@
     padding-left: 1.5rem;
 }
 
+
 .servicesInfo {
     margin: 0 0 40px 24px;
+
+}
+
+.servicesInfo li::marker {
+    color: #406182;
 }
 
 .servicesText {
@@ -31,17 +37,24 @@
 }
 
 .servicesFooterTitel {
+    margin-bottom: 20px;
     color: #333;
     font-weight: bold;
 }
-.servicesKontakt{
+
+.servicesFooterKontakt {
+    margin-bottom: 10px;
     color: #333;
     font-weight: bold;
 }
-.servicesFooterInfo{
+
+.servicesFooterInfo {
+    margin-bottom: 5px;
     color: #333;
     font-weight: bold;
 }
-.servicesFooterText{
+
+.servicesFooterText {
+    margin-bottom: 15px;
     color: #666;
 }

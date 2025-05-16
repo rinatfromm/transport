@@ -1,23 +1,22 @@
-/* styles.css */
 .headerScrolled {
     background-color: #333;
-  }
-  
-  .menuOpen {
+}
+
+.menuOpen {
     display: block;
-  }
-  
-  .burger.open .bar:nth-child(1) {
+}
+
+.burger.open .bar:nth-child(1) {
     transform: rotate(45deg);
-  }
-  
-  .burger.open .bar:nth-child(2) {
+}
+
+.burger.open .bar:nth-child(2) {
     opacity: 0;
-  }
-  
-  .burger.open .bar:nth-child(3) {
+}
+
+.burger.open .bar:nth-child(3) {
     transform: rotate(-45deg);
-  }
+}
 
 
 
@@ -70,7 +69,6 @@
 .oneTitle {
     color: #fff;
     font-size: 25px;
-    font-family: 'Roboto', sans-serif;
     font-style: italic;
     margin: 0;
 }

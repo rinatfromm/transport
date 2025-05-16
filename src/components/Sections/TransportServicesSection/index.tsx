@@ -18,7 +18,7 @@ const TransportServicesSection: React.FC = () => {
             <div className={styles.servicesFooter}>
                 <h2 className={styles.servicesFooterTitel}>Kontaktieren Sie uns</h2>
                 <p className={styles.servicesFooterText}>Wir erstellen Ihnen gerne ein individuelles Angebot – kostenlos und unverbindlich. Auf Wunsch bieten wir nach Besichtigung ein Festpreisangebot an.</p>
-                <h3 className={styles.servicesKontakt}>Telefon | E-Mail</h3>
+                <h3 className={styles.servicesFooterKontakt}>Telefon | E-Mail</h3>
                 <p className={styles.servicesFooterText}>Überzeugen Sie sich von unserem erstklassigen Preis-Leistungs-Verhältnis!</p>
                 <p className={styles.servicesFooterInfo}>Rechnung gemäß Kleinunternehmerregelung (§ 19 UStG)</p>
                 <p className={styles.servicesFooterInfo}>Wir freuen uns auf Ihre Anfrage!</p>

@@ -2,7 +2,7 @@ import billboard from '../../../assets/images/bustwo.png';
 import styles from './Billboard.module.css';
 
 function Billboard() {
-    const phoneNumber = "+491729017929";
+    const phoneNumber = "+4917669653451";
 
     return (
         <section className={styles.billboard}>

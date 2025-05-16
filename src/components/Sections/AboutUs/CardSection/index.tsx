@@ -9,7 +9,18 @@ const CardSection: React.FC<Section> = ({ heading, items }) => {
             <ul className={styles.list}>
                 {items.map((item, index) => (
                     <li key={index} className={styles.listItem}>
-                        {item}
+                        {typeof item === 'string' ? (
+                            item
+                        ) : (
+                            <>
+                                {item.text}
+                                <ul className={styles.subList}>
+                                    {item.subItems.map((subItem, subIndex) => (
+                                        <li key={subIndex} className={styles.subListItem}>{subItem}</li>
+                                    ))}
+                                </ul>
+                            </>
+                        )}
                     </li>
                 ))}
             </ul>
@@ -18,3 +29,4 @@ const CardSection: React.FC<Section> = ({ heading, items }) => {
 };
 
 export default CardSection;
+

@@ -29,35 +29,35 @@ const GallerySection: React.FC = () => {
   };
 
   return (
-    <div className={styles.emblaWrapper}>
-      <div className={styles.embla} ref={emblaRef}>
-        <div className={styles.emblaContainer}>
-          {images.map((image, index) => (
-            <div className={styles.emblaSlide} key={index}>
-              <img src={image.src} alt={image.alt} className={styles.emblaImage} />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className={styles.emblaButtons}>
-        <button
-          className={`${styles.emblaButton} ${styles.emblaButtonPrev}`}
-          onClick={scrollPrev}
-          disabled={!canScrollPrev}
-        >
-          &#10094;
-        </button>
-        <button
-          className={`${styles.emblaButton} ${styles.emblaButtonNext}`}
-          onClick={scrollNext}
-          disabled={!canScrollNext}
-        >
-          &#10095;
-        </button>
+  <div className={styles.emblaWrapper} data-testid="gallery-section">
+    <div className={styles.embla} ref={emblaRef}>
+      <div className={styles.emblaContainer}>
+        {images.map((image, index) => (
+          <div className={styles.emblaSlide} key={index}>
+            <img src={image.src} alt={image.alt} className={styles.emblaImage} />
+          </div>
+        ))}
       </div>
     </div>
-  );
+
+    <div className={styles.emblaButtons}>
+      <button
+        className={`${styles.emblaButton} ${styles.emblaButtonPrev}`}
+        onClick={scrollPrev}
+        disabled={!canScrollPrev}
+      >
+        &#10094;
+      </button>
+      <button
+        className={`${styles.emblaButton} ${styles.emblaButtonNext}`}
+        onClick={scrollNext}
+        disabled={!canScrollNext}
+      >
+        &#10095;
+      </button>
+    </div>
+  </div>
+);
 };
 
 export default GallerySection;

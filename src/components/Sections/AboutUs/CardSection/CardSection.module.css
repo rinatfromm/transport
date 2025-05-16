@@ -19,9 +19,9 @@
 }
 
 .list {
+    list-style-type: disc;
+    padding-left: 20px;
     margin: 0;
-    padding: 0;
-    list-style-type: none;
 }
 
 .listItem {
@@ -29,9 +29,29 @@
     color: #666;
 }
 
+.listItem::marker {
+    color: #406182;
+}
 
 .subheading {
     font-size: 20px;
     margin-bottom: 20px;
     color: #333;
 }
+
+.subList {
+    list-style-type: circle;
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.subListItem {
+    color: #406182;
+    padding: 4px 0;
+}
+
+.subListItem::marker {
+    color: #406182;
+}
+
+

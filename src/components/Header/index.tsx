@@ -52,10 +52,10 @@ function Header() {
 
                 <div className={`${styles.contactIcons} ${isMenuOpen ? styles.menuOpen : ''}`} data-testid="contact-icons">
                     <WhatsAppButton
-                        phoneNumber="491729017929"
+                        phoneNumber="+4917669653451"
                         message="Hallo! Ich interessiere mich für Ihre Dienstleistungen und möchte mehr darüber erfahren. Könnten Sie mir bitte mehr Informationen geben?"
                     />
-                    <a href="tel:+491729017929" className={`${styles.contactLink} ${scrolled ? styles.scrolledLink : ''}`}
+                    <a href="tel:+4917669653451" className={`${styles.contactLink} ${scrolled ? styles.scrolledLink : ''}`}
                         role="link" aria-label="phone">
                         <Icon icon="mdi:phone" />
                     </a>
