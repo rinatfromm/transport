@@ -12,20 +12,17 @@
 
 .emblaContainer {
   display: flex;
-  width: 100%;
+  margin-left: -16px; 
 }
 
 .emblaSlide {
-  position: relative;
-  width: 20%;
-  flex-shrink: 0;
-  padding: 20px;
-  min-width: 170px;
+  flex: 0 0 33.333%;
+  padding-left: 16px; 
+  box-sizing: border-box;
 }
-
 .emblaImage {
   width: 100%;
-  height: 400px;
+  aspect-ratio: 16 / 9;
   display: block;
   object-fit: cover;
   border-radius: 8px;
@@ -42,6 +39,7 @@
   padding: 10px;
   cursor: pointer;
   z-index: 10;
+  border-radius: 12px;
 }
 
 .emblaButton:hover {
@@ -54,11 +52,11 @@
 }
 
 .emblaButtonPrev {
-  left: 25px;
+  left: 15px;
 }
 
 .emblaButtonNext {
-  right: 85px;
+  right: 75px;
 }
 
 .emblaButtons {
@@ -97,4 +95,23 @@
     min-width: 320px;
   }
 
+}
+@media (max-width: 925px) {
+  .emblaSlide {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 360px) {
+  .emblaSlide {
+    flex: 0 0 100%;
+  }
+
+  .emblaContainer {
+    margin-left: -12px;
+  }
+
+  .emblaSlide {
+    padding-left: 12px;
+  }
 }

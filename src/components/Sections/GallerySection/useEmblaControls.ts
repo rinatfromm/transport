@@ -1,4 +1,4 @@
-// src/hooks/useEmblaControls.ts
+
 import { useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 

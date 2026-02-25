@@ -3,7 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import styles from './GallerySection.module.css';
 import { images } from './imageList'
 
-
+console.log('images length', images.length, images)
 const GallerySection: React.FC = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel();
   const [canScrollPrev, setCanScrollPrev] = useState(false);

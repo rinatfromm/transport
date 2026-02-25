@@ -1,4 +1,4 @@
-import billboard from '../../../assets/images/bustwo.png';
+import billboard from '../../../assets/images/b.png';
 import styles from './Billboard.module.css';
 
 function Billboard() {
@@ -8,10 +8,10 @@ function Billboard() {
         <section className={styles.billboard}>
             <img alt="Von Tür zu Tür – einfach, zuverlässig, professionell." src={billboard} className={styles.image} />
             <div className={styles.slogan}>
-                <h1>Von Tür zu Tür – einfach, zuverlässig, professionell.</h1>
+                <h1 className={styles.title}>Von Tür zu Tür – einfach, zuverlässig, professionell.</h1>
                 <p className={styles.p}>Expressfahrten, Möbeltransport, Kurierfahrten, Umzüge</p>
                 <a href={`tel:${phoneNumber}`}>
-                    <button>Kontaktieren Sie uns</button>
+                    <button className={styles.btnKontakt}>Kontaktieren Sie uns</button>
                 </a>
             </div>
         </section>
