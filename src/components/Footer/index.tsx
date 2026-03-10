@@ -12,7 +12,6 @@ const Footer: React.FC = () => {
                         Impressum
                     </NavLink>
                     <ContactInfo value="Ruppel-Transporte" />
-                    <ContactInfo value="Svetlana Ruppel" />
                     <ContactInfo value="Neudammstraße 27, 38116 Braunschweig" />
                     <ContactInfo label="Telefon" value="+4917669653451" isLink />
                     <ContactInfo label="E-Mail" value="info@ruppel-transporte.de" isLink />

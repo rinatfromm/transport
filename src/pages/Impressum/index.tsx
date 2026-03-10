@@ -18,7 +18,7 @@ const Impressum: React.FC = () => {
             <p className={styles.impressumText}>38116 Braunschweig</p>
 
             <h3 className={styles.impressumSectionTitle}>Vertreten durch:</h3>
-            <p className={styles.impressumText}>Geschäftsführer: Svetlana Ruppel</p>
+            <p className={styles.impressumText}>Geschäftsführer: Swetlana Ruppel</p>
 
             <h3 className={styles.impressumSectionTitle}>Kontakt:</h3>
             <p>
